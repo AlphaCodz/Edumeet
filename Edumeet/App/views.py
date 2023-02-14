@@ -4,3 +4,8 @@ from django.shortcuts import render
 def Home(request):
     return render(request, "index.html")
     
+def Video(request):
+    return render(request, "video.html")
+
+def Departments(request):
+    return render(request, "departments.html")
