@@ -1,25 +1,11 @@
+{% extends "mainweb/base.html" %}
 {% load static %}
 {% block body %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Edumeet</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Edumeet  | Video Conferencing For Education.">
-  <meta name="keywords" content="edumeet, video-conferencing, html, sass, jquery">
-  <meta name="author" content="Abiona Israel">
-  <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
-  <link rel="stylesheet" href="{% static 'assets/css/feature.css' %}">
-
-</head>
-<body>
 
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
-    <img src="{% static 'assets/img/logo.png' %}" alt="Global">
+    <img src="{% static 'img/logo.png' %}" alt="Global">
     <p></p>
   </a>
   <p class="device-notification--message">Edumeet has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
@@ -31,7 +17,7 @@
       <div class="l-wrapper">
         <header class="header">
           <a class="header--logo" href="#0">
-            <img src="{% static 'assets/img/logo_white.png' %}" alt="edumeet">
+            <img src="{% static 'img/logo_white.png' %}" alt="edumeet">
             <p></p>
           </a>
           <button class="header--cta cta">Hire Us</button>
@@ -54,7 +40,7 @@
                   <span class="btn-background"></span>
                 </button>
                 </a>
-                <img src="{% static 'assets/img/introduction-visual.png' %}" alt="Welcome">
+                <img src="{% static 'img/introduction-visual.png' %}" alt="Welcome">
               </div>
              
               <div class="intro--options">
@@ -90,7 +76,7 @@
 <section class="call--container hide" id="container">
   <!-- the close call window button -->
   <div class="close" id="close">
-    <img alt="close window" src="{% static 'assets/img/icons8-close-50.png' %}" />
+    <img alt="close window" src="{% static 'img/icons8-close-50.png' %}" />
   </div>
 
   <!-- the holder of the room iframe -->
@@ -124,8 +110,8 @@
     container.lastElementChild.innerHTML = "";
   });
 </script>
-<script>window.jQuery || document.write('<script src="static/assets/js/vendor/jquery-2.2.4.min.js}"><\/script>')</script>
-<script src="{% static 'assets/js/functions-min.js' %}"></script>
+<script>window.jQuery || document.write('<script src="static/js/vendor/jquery-2.2.4.min.js}"><\/script>')</script>
+<script src="{% static 'js/functions-min.js' %}"></script>
 </body>
 </html>
-{% endblock body %}
+{% block body %}
