@@ -24,6 +24,8 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-)2$aa8@u6)inue-1#87+qrvdnn50*@w0u^x$j(6jog)e_e*62$"
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

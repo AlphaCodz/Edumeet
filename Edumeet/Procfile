@@ -1,0 +1,1 @@
+web: gunicorn Edumeet.wsgi --log-file -
